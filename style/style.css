@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf) format(truetype),
+        url(fonts/Raleway-Italic-VariableFont_wght.ttf) format(truetype),
+        url(fonts/static/Raleway-Black.ttf) format(truetype),
+        url(fonts/static/Raleway-BlackItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-Bold.ttf) format(truetype),
+        url(fonts/static/Raleway-BoldItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-ExtraBold.ttf) format(truetype),
+        url(fonts/static/Raleway-ExtraBoldItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-ExtraLight.ttf) format(truetype),
+        url(fonts/static/Raleway-ExtraLightItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-Italic.ttf) format(truetype),
+        url(fonts/static/Raleway-Light.ttf) format(truetype),
+        url(fonts/static/Raleway-LightItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-Medium.ttf) format(truetype),
+        url(fonts/static/Raleway-MediumItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-Regular.ttf) format(truetype),
+        url(fonts/static/Raleway-SemiBold.ttf) format(truetype),
+        url(fonts/static/Raleway-SemiBoldItalic.ttf) format(truetype),
+        url(fonts/static/Raleway-Thin.ttf) format(truetype),
+        url(fonts/static/Raleway-ThinItalic.ttf) format(truetype);
+        font-weight: normal;
+        font-style: normal;
+}
+
