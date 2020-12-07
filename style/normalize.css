@@ -269,7 +269,7 @@
   
   [type="checkbox"],
   [type="radio"] {
-    box-sizing: border-box; /* 1 */
+    box-sizing: w; /* 1 */
     padding: 0; /* 2 */
   }
   
