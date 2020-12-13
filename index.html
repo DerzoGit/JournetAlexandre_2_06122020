@@ -17,15 +17,10 @@
     <!-- Header -->
     <header class="header">
         <img src="images/logo/Reservia.svg" alt="Logo Reservia" class="logo_reservia"/>
-        <div class="list_nav">
-            <nav>
-                <ul>
-                    <li class="nav_link" data-active="true"><a href="#">Hébergements</a></li>
-                    <li class="nav_link" data-active="false"><a href="#">Activités</a></li>
-                </ul>
+            <nav class="list_nav">
+                <a href="#hebergements" class="nav_link" data-active="true">Hébergements</a>
+                <a href="#activity" class="nav_link" data-active="false">Activités</a>
             </nav>
-        </div>
-        
         <a href="#" class="inscription_link">S'inscrire</a>
     </header>
 
@@ -35,9 +30,12 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="search">
-            <p><i class="fas fa-map-marker-alt"></i><a href="#" class="search_button">Rechercher</a></p>
-        </div>
+        <form class="search" action="search_form" method="GET">
+            <i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Marseille, France" /><button>
+                <span class="search_button">Rechercher</span>
+            </button>
+        </form>
+
         <div class="filters">
             <p>Filtres</p>
             <p><i class="fas fa-money-bill-wave"></i>Économique</p>
@@ -47,7 +45,7 @@
         </div>
         <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
 
-        <section class="">
+        <section id="hebergements">
             <div class="marseille_hotel">
                 <h2>Hébergements à Marseille</h2>
                 <figure class="auberge_cannebiere">
@@ -190,7 +188,7 @@
             </div>
         </aside>
 
-        <section class="activity">
+        <section class="activity" id="activity">
             <div class="marseille_activity">
                 <h2>Activités à Marseille</h2>
                 <figure class="vieux_port">
