@@ -14,30 +14,29 @@ body {
 a {
     color: black;
     text-decoration: none;
-    list-style-type: none;
 }
 
 header {
     display: grid;
+    align-items: center;
 }
 
 .logo_reservia {
-    grid-row: 1;
-    grid-column: 1;
-    padding: 0 2em;
-    margin: 1em 0 1em 0;
+    grid-area: logo;
+    padding: 2em;
 }
 
 .list_nav {
-    grid-row: 2;
-    grid-column: 1/4;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    grid-area: nav;
 }
 
 .nav_link {
     border-bottom: 3px solid #F2F2F2;
     padding: 1em;
-    width: inherit;
+    width: 50%;
+    text-align: center;
 }
 
 .nav_link:hover {
@@ -53,19 +52,45 @@ header {
 .inscription_link {
     color: #0065FC;
     font-weight: bold;
-    grid-row: 1;
-    grid-column: 3;
     display: flex;
     align-items: center;
+    grid-area: inscription;
     padding: 0 2em;
 }
 
 
+@media screen and (max-width: 500) {}
+    .header {
+        grid-template-columns: auto 1fr auto;
+        /*allow to define colum's width & number*/
+        grid-template-areas: "logo . inscription" "nav nav nav";
+        /*allow to define where which named areas are. . for blank*/
+}
+
+@media screen and (min-width: 501px) {
+    .header {
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo . nav inscription";
+    }
+    .nav_link:hover {
+        color: #0065FC;
+        border-top: solid #0065FC;
+    }
+    .nav_link {
+        border-bottom: none;
+        padding: 3em;
+    }
+    .nav_link[data-active=true] {
+        color: #0065FC;
+        border-top: #0065FC solid 3px;
+        border-bottom: none;
+        padding: 3em;
+    }
+}
 
 .ico_star[data-active=true] {
     color: #0065FC;
 }
-
 .ico_star[data-active=false] {
     color: #d9d9d9;
 }
