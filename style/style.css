@@ -23,7 +23,7 @@ header {
 
 .logo_reservia {
     grid-area: logo;
-    padding: 2em;
+    padding: 2rem;
 }
 
 .list_nav {
@@ -34,7 +34,7 @@ header {
 
 .nav_link {
     border-bottom: 3px solid #F2F2F2;
-    padding: 1em;
+    padding: 1rem;
     width: 50%;
     text-align: center;
 }
@@ -55,12 +55,10 @@ header {
     display: flex;
     align-items: center;
     grid-area: inscription;
-    padding: 0 2em;
+    padding: 0 2rem;
 }
 
-
-@media screen and (max-width: 500) {}
-    .header {
+.header {
         grid-template-columns: auto 1fr auto;
         /*allow to define colum's width & number*/
         grid-template-areas: "logo . inscription" "nav nav nav";
@@ -84,7 +82,7 @@ header {
         color: #0065FC;
         border-top: #0065FC solid 3px;
         border-bottom: none;
-        padding: 3em;
+        padding: 3rem;
     }
 }
 
