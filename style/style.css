@@ -16,6 +16,7 @@ a {
     text-decoration: none;
 }
 
+/* Header Zone */
 header {
     display: grid;
     align-items: center;
@@ -49,6 +50,10 @@ header {
     border-bottom: #0065FC solid 3px;
 }
 
+.desktop {
+    display: none;
+}
+
 .inscription_link {
     color: #0065FC;
     font-weight: bold;
@@ -70,6 +75,12 @@ header {
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . nav inscription";
     }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
     .nav_link:hover {
         color: #0065FC;
         border-top: solid #0065FC;
@@ -85,11 +96,85 @@ header {
         padding: 3rem;
     }
 }
+/* Header Zone */
 
-.ico_star[data-active=true] {
+
+/* Main */
+.main {
+    padding: 1rem 1.2rem;
+}
+
+/* Search Zone */
+.search_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.search_subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.search {
+    margin: 2rem 0;
+    max-width: 100%;
+    overflow: auto;
+    display: inline-flex;
+}
+
+.fa-map-marker-alt {
+    padding: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 1rem 0 0 1rem ;
+}
+
+.search_input {
+    padding: 0.9rem 0.9rem 0.85rem;
+    border-left: none;
+    border-right: none;
+    border-top: #F2F2F2 solid 1px;
+    border-bottom: #F2F2F2 solid 1px;
+    width: 15rem;
+}
+
+.search_input::placeholder {
+    font-size: normal;
+    font-weight: bold;
+    color: black;
+}
+
+.search_button {
+    padding: 0.5rem;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.fa-search {
+    padding: 0.5rem;
+    color: white;
+}
+
+@media screen and (min-width: 501px) {
+    .search_button {
+        padding: 0.9rem;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        font-weight: bold;
+    }
+}
+/* Search zone */
+
+
+
+
+.fa-star[data-active=true] {
     color: #0065FC;
 }
-.ico_star[data-active=false] {
+.fa-star[data-active=false] {
     color: #d9d9d9;
 }
 
