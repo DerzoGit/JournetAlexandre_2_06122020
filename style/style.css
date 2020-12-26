@@ -192,7 +192,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .filters_icon {
@@ -227,9 +227,57 @@ header {
     }
 }
 
+.fa-info {
+    border: #f2f2f2 solid 2px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    color: #0065FC;
+    display: block;
+}
 
-/* Filters zone*/
+.info {
+    display: flex;
+    align-items: center;
+}
+/*Filters zone*/
 
+/*Most Popular zone*/
+.hebergements_popular {
+    background-color: #F2F2F2;
+    padding: 2rem 0;
+    display: grid;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+
+}
+
+.most_popular_title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.trending_card {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
+    display: flex;
+    grid-template-columns: auto auto;
+    grid-template-areas: "picture description";
+}
+
+.picture_trending_card {
+    max-width: 100%;
+    height: auto;
+    grid-area: picture;
+    display: flex;
+}
+
+.trending_card_description {
+    grid-area: description;
+}
 
 .fa-star[data-active=true] {
     color: #0065FC;
@@ -243,10 +291,6 @@ header {
     height: 200px;
 }
 
-.picture_trending_card {
-    width: 20%;
-    height: 200px;
-}
 
 .large_activity_card {
     width: 20%;
@@ -257,4 +301,3 @@ header {
     width: 20%;
     height: 200px;
 }
-
