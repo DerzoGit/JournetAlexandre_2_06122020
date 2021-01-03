@@ -99,12 +99,10 @@ header {
 /* Header zone */
 
 
-/* Main */
-.main {
-    padding: 1rem 1.2rem;
-}
-
 /* Search zone */
+.padding_mobile {
+    padding: 0rem 1.2rem;
+}
 .search_title {
     font-size: 1.4rem;
     font-weight: 700;
@@ -202,6 +200,11 @@ header {
     border-radius: 50%;
 }
 
+.fa-child {
+    width: 3rem;
+    text-align: center;
+}
+
 .filters_name {
     font-size: normal;
     font-weight: bold;
@@ -234,11 +237,15 @@ header {
     margin-right: 0.5rem;
     color: #0065FC;
     display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
 }
 
 .info {
     display: flex;
     align-items: center;
+    padding-bottom: 1.5rem;
 }
 /*Filters zone*/
 
@@ -252,6 +259,9 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0.5rem 1.2rem 2rem 1.2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .most_popular {
@@ -261,49 +271,54 @@ header {
     justify-content: space-between;
 }
 
+.fa-star[data-active=true] {
+    color: #0065FC;
+}
+.fa-star[data-active=false] {
+    color: #d9d9d9;
+}
+
 /*Trending*/
-.TrendingCard {
+.trending_card {
     background-color: white;
-    border-radius: 1rem;
-    padding: 0.2rem;
-    margin: 1rem;
+    border-radius: 1.2rem;
+    padding: 0.3rem;
+    margin: -0.1rem 1rem;
+    margin-bottom: 1rem;
     box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
-    width: 20rem;
-    height: 9rem;
+    width: 21rem;
     display: flex;
     flex-direction: row;
 }
 
-.TrendingCardPictureDiv {
+.trending_card_picture_div {
     max-width: 40%;
     height: 100%;
 }
 
-.TrendingCardPictureImg {
+.trending_card_picture_img {
     border-radius: 1rem 0 0 1rem;
     width: 100%;
-    height: 100%;
+    height: 8rem;
     object-fit: cover;
     object-position: center;
 }
 
-.TrendingCardDescription {
+.trending_card_description {
     width: 60%;
-    padding: 0rem 0.5rem;
+    padding: 0rem 1rem;
 }
 
-.TrendingCardName {
+.trending_card_name {
     font-weight: bold;
     font-size: 1rem;
 }
 
-.TrendingCardPrice {
+.trending_card_price {
     font-weight: normal;
     font-size: 0.9rem;
-}
-
-.TrendingCardNotation {
-
+    margin-top: -0.6rem;
+    padding-bottom: 1rem;
 }
 
 /*Hebergements*/
@@ -312,66 +327,99 @@ header {
     flex-wrap: wrap;
 }
 
-.HebergementCard {
+.hebergement_title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+
+.hebergement_card {
     background-color: white;
     border-radius: 1rem;
-    padding: 0.2rem;
-    margin: 1rem;
+    padding: 0.3rem;
+    margin: 0.5rem 0.2rem;
     box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
-    width: 20rem;
-    height: 13rem;
+    width: 21rem;
     display: flex;
     flex-direction: column;
 }
 
-.HebergementCardPictureDiv {
+.hebergement_card_picture_div {
     width: 100%;
     max-height: 65%;
 }
 
-.HebergementCardPictureImg {
+.hebergement_card_picture_img {
     border-radius: 1rem 1rem 0 0;
     width: 100%;
-    height: 100%;
+    height: 7rem;
     object-fit: cover;
     object-position: center;
 }
 
-.HebergementCardDescription {
+.hebergement_card_description {
     width: 100%;
     height: 35%;
     padding: 0rem 0.5rem;
-    
 }
 
-.HebergementCardName {
+.hebergement_card_name {
     font-weight: bold;
     font-size: 1rem;
+    margin: -0.1rem 0 -0.7rem 0;
+    padding-top: 0.6rem;
 }
 
-.HebergementCardPrice {
+.hebergement_card_price {
     font-weight: normal;
     font-size: 0.9rem;
+    margin-bottom: -0.1rem;
+    padding-bottom: 0.4rem ;
 }
 
-.HebergementCardNotation {
-
+.hotel_view_more {
+    padding: 2rem 0rem;
 }
 
-
-
-
-
-.fa-star[data-active=true] {
-    color: #0065FC;
-}
-.fa-star[data-active=false] {
-    color: #d9d9d9;
+.hotel_view_more_link {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.picture_card {
-    width: 20%;
-    height: 200px;
+@media screen and (min-width: 501px) {
+    .appartement {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    /*Desktop Hebergements*/
+    .hebergements {
+        background-color: #f2f2f2;
+        border-radius: 1rem;
+        margin: 1.2rem;
+        padding: 0.5rem 0rem 0.5rem 2.5rem;
+    }
+
+    .hebergement_card {
+        margin: 0.8rem;
+        width: 15rem;
+    }
+
+    /*Desktop Most Popular*/
+    .hebergements_popular {
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 2rem 1.2rem;
+    }
+
+    .most_popular_title {
+        padding-top: 1rem;
+    }
+
+    .trending_card {
+        margin-bottom: 2rem;
+    }
 }
 
 
