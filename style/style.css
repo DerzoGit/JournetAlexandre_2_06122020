@@ -422,13 +422,78 @@ header {
     }
 }
 
+/*Activity zone*/
 
-.large_activity_card {
-    width: 20%;
-    height: 200px;
+.activity_title {
+    font-weight: bold;
+    font-size: 1.4rem;
 }
 
-.medium_activity_card {
-    width: 20%;
-    height: 200px;
+.activity_card {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1.5rem 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_card_picture_div {
+    width: 100%;
+}
+
+.activity_card_picture_img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.activity_card_description {
+    width: 100%;
+    padding: 0rem 0.5rem;
+}
+
+.activity_card_name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+@media screen and (min-width: 501px) {
+    .marseille_activity {
+        display: grid;
+        grid-template-areas:
+                        "vieuxport pomegues calanques notredame" 
+                        "vieuxport frioul calanques longchamp";
+    }
+
+    .activity_card_large {
+        height: 24rem;
+    }
+
+    .activity_card_one {
+        grid-area: vieuxport;
+    }
+    .activity_card_two {
+        grid-area: pomegues;
+        height: 7rem;
+    }
+    .activity_card_three {
+        grid-area: frioul;
+        height: 7rem;
+    }
+    .activity_card_four {
+        grid-area: calanques;
+    }
+    .activity_card_five {
+        grid-area: notredame;
+        height: 7rem;
+    }
+    .activity_card_six {
+        grid-area: longchamp;
+        height: 7rem;
+    }
 }
