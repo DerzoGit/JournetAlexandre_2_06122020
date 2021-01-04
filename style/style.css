@@ -286,26 +286,20 @@ header {
     margin: -0.1rem 1rem;
     margin-bottom: 1rem;
     box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
-    width: 21rem;
+    max-width: 21rem;
+    min-width: 20rem;
     display: flex;
-    flex-direction: row;
 }
 
-.trending_card_picture_div {
-    max-width: 40%;
-    height: 100%;
-}
-
-.trending_card_picture_img {
+.trending_card_picture {
     border-radius: 1rem 0 0 1rem;
-    width: 100%;
-    height: 8rem;
+    max-width: 40%;
+    max-height: 8rem;
     object-fit: cover;
     object-position: center;
 }
 
 .trending_card_description {
-    width: 60%;
     padding: 0rem 1rem;
 }
 
