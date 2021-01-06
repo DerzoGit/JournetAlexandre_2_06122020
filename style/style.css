@@ -301,6 +301,7 @@ header {
 
 .trending_card_description {
     padding: 0rem 1rem;
+    max-width: 60%;
 }
 
 .trending_card_name {
@@ -336,11 +337,6 @@ header {
     width: 21rem;
     display: flex;
     flex-direction: column;
-}
-
-.hebergement_card_picture_div {
-    width: 100%;
-    max-height: 65%;
 }
 
 .hebergement_card_picture_img {
@@ -393,6 +389,7 @@ header {
         border-radius: 1rem;
         margin: 1.2rem;
         padding: 0.5rem 0rem 0.5rem 2.5rem;
+        min-width: 23rem;
     }
 
     .hebergement_card {
@@ -416,6 +413,13 @@ header {
     }
 }
 
+@media screen and (min-width: 501px) and (max-width: 830px) {
+    .appartement {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*Activity zone*/
 
 .activity_title {
@@ -431,10 +435,6 @@ header {
     width: 21rem;
     display: flex;
     flex-direction: column;
-}
-
-.activity_card_picture_div {
-    width: 100%;
 }
 
 .activity_card_picture_img {
