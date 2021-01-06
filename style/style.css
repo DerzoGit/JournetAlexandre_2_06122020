@@ -164,9 +164,8 @@ header {
         font-weight: bold;
     }
 }
-/* Search zone */
 
-/* Filters zone*/
+/*Filters zone*/
 .filters {
     flex-wrap: wrap ;
 }
@@ -208,7 +207,7 @@ header {
 .filters_name {
     font-size: normal;
     font-weight: bold;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
     display: flex;
     align-items: center;
 }
@@ -247,7 +246,6 @@ header {
     align-items: center;
     padding-bottom: 1.5rem;
 }
-/*Filters zone*/
 
 /*Most Popular zone*/
 .hebergements_popular {
@@ -283,18 +281,17 @@ header {
     background-color: white;
     border-radius: 1.2rem;
     padding: 0.3rem;
-    margin: -0.1rem 1rem;
-    margin-bottom: 1rem;
+    margin: 0.5rem 1rem;
     box-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9;
     max-width: 21rem;
     min-width: 20rem;
+    max-height: 9rem;
     display: flex;
 }
 
 .trending_card_picture {
     border-radius: 1rem 0 0 1rem;
-    max-width: 40%;
-    max-height: 8rem;
+    max-width: 40%; 
     object-fit: cover;
     object-position: center;
 }
@@ -307,13 +304,15 @@ header {
 .trending_card_name {
     font-weight: bold;
     font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .trending_card_price {
     font-weight: normal;
     font-size: 0.9rem;
-    margin-top: -0.6rem;
-    padding-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
 }
 
 /*Hebergements*/
@@ -356,15 +355,14 @@ header {
 .hebergement_card_name {
     font-weight: bold;
     font-size: 1rem;
-    margin: -0.1rem 0 -0.7rem 0;
+    margin: 0rem auto 0.3rem auto;
     padding-top: 0.6rem;
 }
 
 .hebergement_card_price {
     font-weight: normal;
     font-size: 0.9rem;
-    margin-bottom: -0.1rem;
-    padding-bottom: 0.4rem ;
+    margin: 0rem auto 0.3rem auto;
 }
 
 .hotel_view_more {
@@ -408,8 +406,18 @@ header {
         padding-top: 1rem;
     }
 
+    .most_popular {
+        align-items: center;
+    }
+
     .trending_card {
         margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 620px) {
+    .hebergement_card {
+        width: 21rem;
     }
 }
 
@@ -417,6 +425,10 @@ header {
     .appartement {
         display: flex;
         flex-direction: column;
+    }
+
+    .marseille_hotel {
+        justify-content: space-evenly;
     }
 }
 
@@ -455,8 +467,36 @@ header {
     font-size: 1rem;
 }
 
+@media screen and (min-width: 400px) and (max-width: 705px) {
+    .marseille_activity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 705px) and (max-width: 1040px) {
+    .marseille_activity {
+        display: grid;
+        grid-template-areas:
+                        "vieuxport calanques" 
+                        "pomegues notredame"
+                        "frioul longchamp";
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1040px) and (max-width: 1400px) {
+    .marseille_activity {
+        display: grid;
+        grid-template-areas:
+                        "vieuxport calanques pomegues" 
+                        "notredame frioul longchamp";
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 1400px) {
     .marseille_activity {
         display: grid;
         grid-template-areas:
@@ -478,6 +518,7 @@ header {
     .activity_card_three {
         grid-area: frioul;
         height: 7rem;
+        padding-top: 1rem;
     }
     .activity_card_four {
         grid-area: calanques;
@@ -489,5 +530,53 @@ header {
     .activity_card_six {
         grid-area: longchamp;
         height: 7rem;
+        padding-top: 1rem;
+    }
+}
+
+/*Footer Zone*/
+.footer {
+    background-color: #f2f2f2;
+    margin-top: 3rem ;
+    padding: 2rem 2rem;
+}
+
+.footer_a_propos, .footer_nos_hebergements {
+    padding-bottom: 0.5rem;
+}
+
+.footer_a_propos_title, .footer_nos_hebergements_title, .footer_assistance_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer_a_propos_link, .footer_nos_hebergements_link, .footer_assistance_link {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+@media (min-width: 480px) and (max-width:1000px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1300px) {
+    .footer {
+        display: flex;
+    }
+    .footer_a_propos_link, .footer_nos_hebergements_link, .footer_assistance_link {
+        padding-right: 9rem;
+    }
+}
+
+@media (min-width: 1301px) {
+    .footer {
+        display: flex;
+    }
+    .footer_a_propos_link, .footer_nos_hebergements_link, .footer_assistance_link {
+        padding-right: 15rem;
     }
 }
