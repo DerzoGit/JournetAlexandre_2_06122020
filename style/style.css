@@ -157,6 +157,7 @@ header {
 
 .search_form_button {
     padding: 0.5rem;
+    margin-left: -0.8rem;
     background-color: var(--main-blue);
     border: none;
     border-radius: 1rem;
