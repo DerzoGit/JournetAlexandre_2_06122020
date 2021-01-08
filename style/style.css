@@ -409,10 +409,11 @@ header {
         margin: 1.2rem;
         padding: 0.5rem 0rem 0.5rem 2.5rem;
         min-width: 23rem;
+        max-width: 55rem;
     }
 
     .hebergement_card {
-        margin:2rem;
+        margin: 0rem 2rem 2rem 0rem;
         width: 15rem;
     }
 
@@ -515,6 +516,10 @@ header {
             "notredame frioul longchamp";
         justify-content: space-evenly;
     }
+
+    .activity_card {
+        width: 19rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -523,6 +528,10 @@ header {
         grid-template-areas:
             "vieuxport pomegues calanques notredame"
             "vieuxport frioul calanques longchamp";
+    }
+
+    .activity_card {
+        width: 19rem;
     }
 
     .activity_card_large {
