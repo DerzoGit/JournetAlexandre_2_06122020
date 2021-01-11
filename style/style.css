@@ -340,6 +340,7 @@ header {
 .marseille_hotel {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hebergement_title {
