@@ -287,6 +287,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .fa-star[data-active=true] {
@@ -340,7 +341,7 @@ header {
 .marseille_hotel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .hebergement_title {
@@ -429,10 +430,6 @@ header {
         padding-top: 1rem;
     }
 
-    .trending {
-        align-items: center;
-    }
-
     .trending_card {
         margin-bottom: 2rem;
     }
@@ -448,10 +445,6 @@ header {
     .appartment {
         display: flex;
         flex-direction: column;
-    }
-
-    .marseille_hotel {
-        justify-content: space-evenly;
     }
 }
 
