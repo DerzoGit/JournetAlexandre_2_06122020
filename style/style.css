@@ -78,7 +78,7 @@ header {
     /*allow to define where which named areas are. . for blank*/
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 660px) {
     .header {
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . nav inscription";
@@ -481,6 +481,29 @@ header {
 .activity_card_name {
     font-weight: bold;
     font-size: 1rem;
+}
+
+@media screen and (min-width: 300px) and (max-width: 340px) {
+    .activity_card, .hebergement_card {
+        width: 16.5rem;
+    }
+    .trending_card {
+        max-width: 16.5rem;
+        min-width: 16.5rem;
+    }
+    .trending_card_price {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 370px) {
+    .activity_card, .hebergement_card {
+        width: 19rem;
+    }
+    .trending_card {
+        max-width: 19rem;
+        min-width: 19rem;
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width: 705px) {
